@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Lista de Tarefas</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+	<title>Lista de tarefas</title>
+
 </head>
 <body>
-    <h1>Tarefas</h1>
-    
-    <div id="box-tarefas">
-        <input type="text" name="textTarefa" id="textTarefa" autofocus placeholder="Digite a tarefa!">
+	<h1>Lista de tarefas</h1>
 
-        <div id="div-filtros">
-            <a href="#" id="filtro-todas">Todas</a>
-            <a href="#" id="filtro-pendentes">Pendentes</a>
-            <a href="#" id="filtro-concluidas">Concluídas</a>
-        </div>
+	<input type="text" id="novaTarefa">
+	<button id="adicionarTarefa">Adicionar Tarefa</button>
+	
+	<div id="lista">
+		<p>
+			<span>Fazer a tarefa de casa</span>
+			<button class="editar">Editar</button>
+			<button class="excluir">Excluir</button>
+		</p>
+	</div>
 
-        <ul id="lista"></ul>
-    </div>
-
-    <script src="js/TarefaController.js"></script>
-    <script src="js/TarefaDAO.js"></script>
-    <script src="js/Tarefa.js"></script>
-    <script src="js/main.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

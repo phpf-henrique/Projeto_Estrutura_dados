@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <h1>Tarefas</h1>
+    
+    <div id="box-tarefas">
+        <input type="text" name="textTarefa" id="textTarefa" autofocus placeholder="Digite a tarefa!">
+
+        <div id="div-filtros">
+            <a href="#" id="filtro-todas">Todas</a>
+            <a href="#" id="filtro-pendentes">Pendentes</a>
+            <a href="#" id="filtro-concluidas">Concluídas</a>
+        </div>
+
+        <ul id="lista"></ul>
+    </div>
+
+    <script src="js/TarefaController.js"></script>
+    <script src="js/TarefaDAO.js"></script>
+    <script src="js/Tarefa.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
